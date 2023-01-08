@@ -1,0 +1,54 @@
+*, *::after, *::before{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+:root{
+	--index: calc(1vw + 1vh);
+	--text: #e7e7e0;
+	--transition: transform .75s cubic-bezier(0.075, 0.5, 0, 1);
+}
+
+.layer{
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.item{
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.4);
+}
+
+.item.first{
+    transform: translate3d(0, calc(var(--index)*10), 0);
+    width: 100%;
+    height: calc(var(--index)*10);
+    background-image: url('../img/collection_nft_3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.item.second{
+    transform: translate3d(0, calc(var(--index)*15), 0);
+    width: 100%;
+    height: calc(var(--index)*15);
+    background-image: url('../img/collection_nft_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.item.third{
+    transform: translate3d(0, calc(var(--index)*20), 0);
+    width: 100%;
+    height: calc(var(--index)*20);
+    background-image: url('../img/collection_nft_3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
